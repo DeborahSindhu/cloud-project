@@ -13,7 +13,7 @@ file_name = st.text_input("📂 Enter File Name to Restore", "backup_data.csv")
 # Restore Button
 if st.button("🔄 Restore File"):
     try:
-        response = requests.get(f"http://127.0.0.1:5000/restore/{bucket}/{file_name}")
+        response = requests.get(f"http://127.0.0.1:5000/restore/sindhu_test/sample.txt")
         if response.status_code == 200:
             st.success(response.json().get("message", "✅ File restored successfully!"))
         else:
