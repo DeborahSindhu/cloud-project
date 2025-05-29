@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return jsonify({"message": "Flask API is running! Available routes: /restore/<bucket_name>/<file_name>"}), 200
+    return jsonify({"message": "Flask API is running! Available routes: /restore/sindhu_test/sample.txt"}), 200
 
 if __name__ == "__main__":
     app.run(debug=True)
